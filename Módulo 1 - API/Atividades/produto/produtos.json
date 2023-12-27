@@ -1,0 +1,29 @@
+[
+    {
+        "id": "001",
+        "nome": "Processador AMD Ryzen 3 3200g",
+        "marca": "AMD",
+        "categoria": "Processadores",
+        "preco": 899.99,
+        "quantidade_em_estoque": 50,
+        "disponivel": true
+    },
+    {
+        "id": "002",
+        "nome": "RTX 3060",
+        "marca": "NVIDIA",
+        "categoria": "Placas de vídeo",
+        "preco": 1299.99,
+        "quantidade_em_estoque": 20,
+        "disponivel": false
+    },
+    {
+        "id": "003",
+        "nome": "HeadSet LogiTech",
+        "marca": "LogiTech",
+        "categoria": "Acessórios",
+        "preco": 259.99,
+        "quantidade_em_estoque": 100,
+        "disponivel": true
+    }
+]
