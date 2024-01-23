@@ -40,6 +40,12 @@ function gerarUsuario(){
             helperTextUsuario.innerText = ' ';
             console.log(data);
         })
+        // adicionando tratamento de erro
+        .catch((error) => {
+            helperTextUsuario.innerText = ' ';
+            alert('Não foi possível gerar o usuário');
+            console.log(error)
+        })
 }
 
 // 3. Eventos
