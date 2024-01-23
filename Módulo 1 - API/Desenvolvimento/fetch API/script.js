@@ -59,10 +59,12 @@ const postTitle = document.getElementById('post-title');
 const postBody = document.getElementById('post-body');
 const btnPost = document.getElementById('btn-post');
 const postsContainer = document.getElementById('posts-container');
+const helperTextPost = document.getElementById('helper-text-post');
 
 // 2. Funções
 
 function gerarPost (e) {
+    helperTextPost.innerText = '';
     e.preventDefault();
 
     // transforma o conteudo em json
@@ -82,6 +84,7 @@ function gerarPost (e) {
     .then(data => {
         console.log(data);
         const post = document.createElement('div');
+        post.classList.add('postagem');
         post.innerHTML = `
             <h3>${data.id} - ${data.title}</h3>
             <p>${data.message}</p>
@@ -92,8 +95,12 @@ function gerarPost (e) {
         // limpar o formulário
         postTitle.value = '';
         postBody.value = '';
+        alert('Postagem criada com sucesso!');
     })
-    .catch()
+    .catch((error) => {
+        console.log(error);
+        helperTextPost.innerText = 'Não foi possível gerar a postagem :c';
+    })
 };
 
 // 3. Eventos
