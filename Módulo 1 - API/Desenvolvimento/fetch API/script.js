@@ -24,7 +24,17 @@ function gerarUsuario(){
 
     fetch('https://random-data-api.com/api/v2/users')
         .then ((res) => res.json())
-        .then ((data) => console.log(data))
+        .then ((data) => {
+            const usuario = document.createElement('div') // criando usuario embaixo do botao
+            usuario.innerHTML = `
+                <img src="${data.avatar}"/>
+                <span>
+                    <strong>Username:</strong> ${data.username}
+                </span>
+            `;
+            usuariosContainer.appendChild(usuario);
+            console.log(data)
+        })
 }
 
 // 3. Eventos
