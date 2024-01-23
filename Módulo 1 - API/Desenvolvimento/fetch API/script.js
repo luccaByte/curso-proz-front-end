@@ -65,15 +65,35 @@ const postsContainer = document.getElementById('posts-container');
 function gerarPost (e) {
     e.preventDefault();
 
+    // transforma o conteudo em json
+    const jsonBody = JSON.stringify({
+        title: postTitle.value,
+        message: postBody.value
+    })
+
     fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         headers: {
-            "Content Type": "application/json"
+            "Content-Type": "application/json" // definindo o tipo 
         },
-        body: {
-            
-        }
+        body: jsonBody
     })
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+        const post = document.createElement('div');
+        post.innerHTML = `
+            <h3>${data.id} - ${data.title}</h3>
+            <p>${data.message}</p>
+        `;
+
+        postsContainer.appendChild(post);
+
+        // limpar o formulário
+        postTitle.value = '';
+        postBody.value = '';
+    })
+    .catch()
 };
 
 // 3. Eventos
