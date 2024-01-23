@@ -52,8 +52,30 @@ function gerarUsuario(){
 btnUsuario.addEventListener('click', gerarUsuario)
 
 // -------- Gerador de postagens -------- //
+
 // 1. Captura de elementos
+
+const postTitle = document.getElementById('post-title');
+const postBody = document.getElementById('post-body');
+const btnPost = document.getElementById('btn-post');
+const postsContainer = document.getElementById('posts-container');
 
 // 2. Funções
 
+function gerarPost (e) {
+    e.preventDefault();
+
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        headers: {
+            "Content Type": "application/json"
+        },
+        body: {
+            
+        }
+    })
+};
+
 // 3. Eventos
+
+btnPost.addEventListener('click', (e) => gerarPost(e))
