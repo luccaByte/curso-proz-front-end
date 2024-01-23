@@ -1,0 +1,51 @@
+body {
+    background-color: #58378C;
+    color: #FEFEFE;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1, h2 {
+    background-color: #6C3C9D;
+    width: 400px;
+    padding: 8px;
+    border-radius: 8px;
+    color: #FEFEFE;
+}
+
+#postagens {
+    margin-top: 2rem;
+}
+
+button {
+    background-color: #EF7D19;
+    color: #FEFEFE;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(28, 87%, 40%);
+}
+
+.helper-text {
+    font-size: .8rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 8px;
+}
+
+input {
+    padding: 8px;
+}
+
+textarea {
+    padding: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

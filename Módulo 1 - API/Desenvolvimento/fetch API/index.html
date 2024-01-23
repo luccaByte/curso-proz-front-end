@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>API Fetch</title>
+    </head>
+    <body>
+        <h1>Gerador de usuarios</h1>
+
+        <section id="usuarios-container">
+            <button id="btn-usuario">Novo usuario</button>
+            <span class="helper-text" id="helper-text-usuario"></span>
+        </section>
+
+        <section>
+            <h2>Gerador de postagens</h2>
+
+            <div id="posts-container" ></div>
+
+            <form>
+                <label for="post-title">Titulo</label>
+                <input type="text" id="post-title" name="title">
+                <label for="post-body">Postagem</label>
+                <textarea name="body" id="post-body" cols="30" rows="10" ></textarea>
+                <button id="btn-post">Enviar</button>
+                <span class="helper-text" id="helper-text-post"></span>
+            </form>
+        </section>
+    </body>
+</html>
