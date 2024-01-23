@@ -49,3 +49,17 @@ textarea {
     padding: 8px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.usuario {
+    background-color: #6C3C9D;
+    width: 402px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 8px;
+    padding: 7px;
+}
+
+.usuario img {
+    height: 80px;
+}

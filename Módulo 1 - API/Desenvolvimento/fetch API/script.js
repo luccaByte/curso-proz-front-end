@@ -20,6 +20,9 @@ function gerarUsuario(){
     })
     */
 
+    helperTextUsuario.innerText = 'Carregando...';
+
+
     // outra maneira (mais simples kkk)
 
     fetch('https://random-data-api.com/api/v2/users')
@@ -32,8 +35,10 @@ function gerarUsuario(){
                     <strong>Username:</strong> ${data.username}
                 </span>
             `;
+            usuario.classList.add('usuario')
             usuariosContainer.appendChild(usuario);
-            console.log(data)
+            helperTextUsuario.innerText = ' ';
+            console.log(data);
         })
 }
 
