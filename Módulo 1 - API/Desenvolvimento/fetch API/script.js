@@ -90,7 +90,7 @@ function gerarPost (e) {
             <p>${data.message}</p>
         `;
 
-        postsContainer.appendChild(post);
+        postsContainer.prepend(post);
 
         // limpar o formulário
         postTitle.value = '';
