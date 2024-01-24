@@ -30,8 +30,9 @@ function cadastroProduto(e) {
         console.log(data)
         
         produtosCadastrados.innerHTML = `
+            <h3>Produto</h3>
             <p><strong>Nome:</strong> ${data.json.nome}</p>
-            <p><strong>Valor:</strong> ${data.json.valor}</p>
+            <p><strong>Valor:</strong> ${data.json.valor}R$</p>
             <p><strong>Descrição:</strong> ${data.json.descricao}</p>
         `;
 
@@ -39,7 +40,7 @@ function cadastroProduto(e) {
         valorProduto.value = '';
         descricaoProduto.value = '';
         feedbackUsuario.innerText = '';
-        
+
         alert('Produto cadastrado com sucesso!')
     })
     .catch ((error) => {
