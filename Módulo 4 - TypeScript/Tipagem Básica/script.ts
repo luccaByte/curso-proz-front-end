@@ -7,9 +7,15 @@
 
 // numeroTs = false;
 
-let inputNome = document.querySelector('input');
 let titulo = document.querySelector('h1');
 let link = document.querySelector('a');
+
+
+// tipo any
+
+let inputNome: any = document.querySelector('input');
+
+
 
 if (inputNome) {
     inputNome.value
@@ -20,3 +26,5 @@ if (inputNome) {
 // simplificando
 
 inputNome?.value
+
+
