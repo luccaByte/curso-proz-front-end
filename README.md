@@ -1,29 +1,60 @@
-# Curso de Extensão Front-End
+# Extensão Front-End
 
-Curso de Extensão Front-End da PROZ - Talento Cloud
+Curso de Extensão Front-End da PROZ - Talento Cloud. 
 
-## Tecnologias
 
-Tecnologias usadas durante o aprendizado:
 
-1. API
-    - Plataforma usada (Postman): [Link](https://www.postman.com/)
-    - Meu notion para anotações: [Link](https://www.notion.so/minerva-program/JSON-8c5a30b8534640af822fb76e457f8502?pvs=4)
-    - API's gratuitas usadas nas aulas:
-        - Advice Slip JSON API [Link](https://api.adviceslip.com/)
-        - ReqRes RestAPI [Link](https://reqres.in/)
-        - Random Data API [Link](https://random-data-api.com/)
-        - {JSON} Placeholder [Link](https://jsonplaceholder.typicode.com/)
+### Tecnologias
 
-2. Bootstrap
-    - Meu notion para anotações: [Link](https://www.notion.so/minerva-program/Bootstrap-e94c5fa262e3405982576fb27c780f67)
-    - Documentações:
-        - Bootstrap Componentes: [Link](https://getbootstrap.com/docs/5.3/components/buttons/)
-        - Bootstrap Grid: [Link](https://getbootstrap.com/docs/5.3/layout/grid/)
-        - Bootstrap Navbar: [Link](https://getbootstrap.com/docs/5.3/components/navbar/)
-        - Bootstrap Justify content usado no navbar: [Link](https://getbootstrap.com/docs/5.3/utilities/flex/)
-3. npm
-4. TypeScript
-5. React
+Tecnologias aprendidas durante o curso, divididas por módulos:
 
-##
+<details>
+<summary>1. API</summary>
+
+Plataforma usada: [Postman](https://www.postman.com/)
+
+API's gratuitas usadas durante as aulas:
+
+- [Advice Slip JSON API ](https://api.adviceslip.com/)
+- [ReqRes RestAPI](https://reqres.in/)
+- [LRandom Data APIink](https://random-data-api.com/)
+- [{JSON} Placeholder](https://jsonplaceholder.typicode.com/)
+</details>
+
+<details>
+
+<summary>2. Bootstrap</summary>
+Documentações:
+
+- [Bootstrap Componentes](https://getbootstrap.com/docs/5.3/components/buttons/)
+- [Bootstrap Grid](https://getbootstrap.com/docs/5.3/layout/grid/)
+- [Bootstrap Navbar](https://getbootstrap.com/docs/5.3/components/navbar/)
+- [Bootstrap Justify content usado no navbar](https://getbootstrap.com/docs/5.3/utilities/flex/)
+</details>
+
+<details>
+
+<summary>3. npm</summary>
+
+- Modularização
+- CDN
+- Gerenciamento de pacotes (package.json)
+</details>
+
+<details>
+
+<summary>4. TypeScript</summary>
+
+- setup do typescript
+- tipagem básica
+    - tipagem dinâmica
+    - tipagem estática
+- tipagem intermediária
+</details>
+
+<details>
+
+<summary>5. React</summary>
+
+</details>
+
