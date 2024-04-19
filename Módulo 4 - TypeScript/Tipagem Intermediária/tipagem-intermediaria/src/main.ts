@@ -49,3 +49,30 @@ let usuario02: Usuario = {
 type NumerosPermitidos = 2 | 3 | 5
 
 let numero: NumerosPermitidos = 5
+
+
+// ===============================================================
+
+// Tipagem de Arrays
+
+let nomes: string[] = ['Lucas', 'Frieren', 'Fern']
+
+// push() adiciona ao final do vetor
+nomes.push('Himmel')
+
+let numeros: number[] = [1, 2, 3, 4]
+
+// Array de objeto
+
+type Aluno = {
+    nome: string,
+    idade: number
+}
+
+// para criar um vetor de um objeto, coloque colchetes depois do nome do objeto
+let alunos: Aluno[] = [
+    {nome: 'Lucas', idade: 23},
+    {nome: 'Frieren', idade: 2000},
+    {nome: 'Fern', idade: 19},
+    {nome: 'Himmel', idade: 80}
+]
