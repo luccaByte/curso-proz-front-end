@@ -62,6 +62,10 @@ nomes.push('Himmel')
 
 let numeros: number[] = [1, 2, 3, 4]
 
+// ===============================================================
+
+// Tipagem de Objeto
+
 // Array de objeto
 
 type Aluno = {
@@ -76,3 +80,24 @@ let alunos: Aluno[] = [
     {nome: 'Fern', idade: 19},
     {nome: 'Himmel', idade: 80}
 ]
+
+// ===============================================================
+
+// Tipagem de Funções
+
+function retornarPrimeiro (lista: Aluno[]): string {
+    const primeiro = lista[0]
+    return `O aluno ${primeiro.nome} tem ${primeiro.idade} anos.`
+}
+
+function maiorDeIdade(lista: Aluno[]){
+    const numero = lista[0]
+
+    if(numero.idade > 18){
+        return true
+    } else if(numero.idade < 18){
+        return false
+    } else {
+        return false
+    }
+}
