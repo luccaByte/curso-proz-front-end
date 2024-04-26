@@ -159,3 +159,49 @@ let listaObjeto: Lista<Usuario> = [
         }
     }
 ]
+
+// ===============================================================
+
+// Tipos genéricos (Objetos)
+
+type Filme = {
+    titulo: string,
+    genero: 'animação' | 'ação' | 'comédia' | 'romance' | 'ficção-científica'
+}
+
+let listaFilmes: Filme[] = []
+listaFilmes.push(
+{
+    titulo: 'Bladerunner 2049',
+    genero: 'ação'
+},
+{
+    titulo: 'Super Mario World',
+    genero: 'animação'
+},
+{
+    titulo: 'O Problema dos 3 Corpor',
+    genero: 'ficção-científica'
+},
+{
+    titulo: 'Suzume',
+    genero: 'animação'
+}
+)
+
+type DadosLista<T> = {
+    total: number,
+    ultimoFilme: T,
+    lista: T[]
+}
+
+let filmeMaisRecente: DadosLista<Filme> = {
+    total: listaFilmes.length,
+    ultimoFilme: listaFilmes[listaFilmes.length - 1],
+    lista: listaFilmes
+}
+
+console.log('Lista de filmes:')
+console.log(listaFilmes)
+
+console.log('Último filme da lista: ' + filmeMaisRecente.ultimoFilme.titulo)
