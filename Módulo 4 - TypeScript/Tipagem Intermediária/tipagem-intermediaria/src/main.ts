@@ -101,3 +101,29 @@ function maiorDeIdade(lista: Aluno[]){
         return false
     }
 }
+
+
+// Parametros opcionais
+
+// para deixar um parametro opcional, basta colocar ? na frente da variavel
+function calcularPagamento(valor: number, parcelas: number, desconto?: number) {
+
+    const parcelasComValores: number[] = []
+    
+    for (let i = 1; i <= parcelas; i++) {
+        let valorNovo = valor
+
+        if (desconto) {
+            valorNovo = valor - (valor * desconto)
+        }
+
+        parcelasComValores.push(valorNovo / parcelas)
+    }
+
+    return parcelasComValores
+}
+
+// podemos ou nao usar o parametro que está marcada como opcional
+calcularPagamento(148, 3, 0.25)
+
+console.log(calcularPagamento(150, 3, 0.2)) // valor, parcela, desconto
