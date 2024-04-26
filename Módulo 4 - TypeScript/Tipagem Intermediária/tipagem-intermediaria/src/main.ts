@@ -127,3 +127,35 @@ function calcularPagamento(valor: number, parcelas: number, desconto?: number) {
 calcularPagamento(148, 3, 0.25)
 
 console.log(calcularPagamento(150, 3, 0.2)) // valor, parcela, desconto
+
+// ===============================================================
+
+// Tipos genéricos (Arrays)
+
+type Lista<T> = T[]; // pessoal costuma usar T para nomear um tipo generico
+
+// uso do tipo generico
+let listaNumeros: Lista<number> = []
+listaNumeros.push(5)
+
+let listaNomes: Lista<string> = []
+listaNomes.push('Fern')
+
+let listaObjeto: Lista<Usuario> = [
+    {
+        nome: 'Frieren', idade: 2000,
+        admin: false,
+        endereco: {
+            estado: "",
+            cidade: ""
+        }
+    },
+    {
+        nome: 'Fern', idade: 19,
+        admin: true,
+        endereco: {
+            estado: "",
+            cidade: ""
+        }
+    }
+]
