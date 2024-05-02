@@ -102,7 +102,6 @@ function maiorDeIdade(lista: Aluno[]){
     }
 }
 
-
 // Parametros opcionais
 
 // para deixar um parametro opcional, basta colocar ? na frente da variavel
@@ -205,3 +204,36 @@ console.log('Lista de filmes:')
 console.log(listaFilmes)
 
 console.log('Último filme da lista: ' + filmeMaisRecente.ultimoFilme.titulo)
+
+
+// ===============================================================
+
+// Tipos genéricos (funções)
+
+function primeiroElemento<T>(lista: T[]): T{
+    return lista[0]
+}
+
+let listaNumber = [1, 2, 3, 4]
+let listaString = ['Lucas', 'Frieren', 'Fern']
+
+type Produto = {
+    nome: string,
+    preco: number
+}
+
+let listaProdutos: Produto[] = [
+    {nome: 'Leite', preco: 7.99},
+    {nome: 'Nescau', preco: 5.99}
+]
+
+// o resultado vai passar qualquer elemento do tipo generico pois já está definido pela function
+let resultado1 = primeiroElemento(listaNumber)
+let resultado2 = primeiroElemento(listaString)
+let resultado3 = primeiroElemento(listaProdutos)
+
+
+// o mais recomendavel é colocar explicitamente o tipo generico pois ele mesmo vai definir qual o retorno
+const inputNome = document.querySelector<HTMLInputElement>('#nome')
+
+inputNome?.value // agora temos acesso ao value
