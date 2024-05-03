@@ -68,5 +68,10 @@ Documentações:
 
 <summary>5. React</summary>
 
+- JavaScript para React
+- Componentes
+- Estilização
+- Renderização
+- Hooks
 </details>
 
