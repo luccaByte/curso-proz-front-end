@@ -49,7 +49,19 @@ Documentações:
 - tipagem básica
     - tipagem dinâmica
     - tipagem estática
+    - tipagem explícita e união de tipos
+    - tipos literais
+    - tipos de DOM (implícito)
+    - tipo "any"
 - tipagem intermediária
+    - tipagem de objetos
+    - tipagem de arrays
+    - tipagem de funções I
+- tipagem avançada
+    - tipagem de funções II
+    - tipos genéricos (com arrays)
+    - tipos genéricos (com objetos)
+    - tipos genéricos (com funções)
 </details>
 
 <details>
