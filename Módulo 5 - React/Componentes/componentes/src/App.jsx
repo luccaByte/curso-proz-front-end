@@ -1,8 +1,9 @@
+
 // isso é um componente
-function InputComLabel(){
+function InputComLabel(idString, textoLabel){
     return <>
-        <label htmlFor="">Nome: </label>
-        <input type="text" />
+        <label htmlFor={idString}>{textoLabel} </label>
+        <input type="text" id={idString} name={idString} />
         <br />
     </>
 }
@@ -14,8 +15,11 @@ function App() {
         <h1>Componentes</h1>
 
         {/* duas formas de chamar um componente (função) */}
-        { InputComLabel() }
-        <InputComLabel />
+        { InputComLabel({idString: 'nome', textoLabel: 'Nome:'}) }
+
+        <InputComLabel idString='nome' textoLabel='Nome:' />
+		<InputComLabel idString='idade' textoLabel='Idade:' />
+		<InputComLabel idString='endereco' textoLabel='Endereço:' />
 
     </>
   )
