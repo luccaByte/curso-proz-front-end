@@ -1,14 +1,7 @@
+import InputComLabel from "./components/InputComLabel";
+import { Botao } from "./components/InputComLabel"
 
 // isso é um componente
-function InputComLabel(idString, textoLabel){
-    return <>
-        <label htmlFor={idString}>{textoLabel} </label>
-        <input type="text" id={idString} name={idString} />
-        <br />
-    </>
-}
-
-// isso é outro componente
 function App() {
   return (
     <>
@@ -18,9 +11,11 @@ function App() {
         { InputComLabel({idString: 'nome', textoLabel: 'Nome:'}) }
 
         <InputComLabel idString='nome' textoLabel='Nome:' />
-		<InputComLabel idString='idade' textoLabel='Idade:' />
-		<InputComLabel idString='endereco' textoLabel='Endereço:' />
+        <InputComLabel idString='idade' textoLabel='Idade:' />
+        <InputComLabel idString='endereco' textoLabel='Endereço:' />
 
+        <Botao textoBotao="Botão simples"/>
+        <Botao textoBotao="Outro Botao"/>
     </>
   )
 }
