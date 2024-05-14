@@ -1,9 +1,17 @@
 import InputComLabel from "./components/InputComLabel";
 import Botao from "./components/Botao";
-import "./styles/global.css";  // por padrao o react nao reconhece os arquivos css
+import "./styles/global.css";   // por padrao o react nao reconhece os arquivos css
 
 // isso é um componente
 function App() {
+
+    const estiloBotao = {   // estilização inline
+        color: 'red',
+        backgroundColor: 'lightgreen',
+        padding: '8px',
+        borderRadius: '4px'
+    }
+
   return (
     <>
         <h1>Componentes</h1>
@@ -33,7 +41,8 @@ function App() {
 
         <Botao textoBotao="Botão simples"/>
         <Botao textoBotao="Outro Botao"/>
-        <button>Botao do App</button>
+        <br/>
+        <button style={ estiloBotao }>Botao avulso</button>
     </>
   )
 }
