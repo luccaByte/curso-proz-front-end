@@ -1,5 +1,6 @@
 import InputComLabel from "./components/InputComLabel";
-import { Botao } from "./components/InputComLabel"
+import Botao from "./components/Botao";
+import "./styles/global.css";  // por padrao o react nao reconhece os arquivos css
 
 // isso é um componente
 function App() {
@@ -32,6 +33,7 @@ function App() {
 
         <Botao textoBotao="Botão simples"/>
         <Botao textoBotao="Outro Botao"/>
+        <button>Botao do App</button>
     </>
   )
 }

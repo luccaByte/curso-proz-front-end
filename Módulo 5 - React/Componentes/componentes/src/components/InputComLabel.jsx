@@ -8,12 +8,6 @@ function InputComLabel({idString, textoLabel, children}){
     </>
 }
 
-function Botao({textoBotao}) {
-    return <button>
-        {textoBotao}
-    </button>
-}
 
 export default InputComLabel
-export { Botao }
 
