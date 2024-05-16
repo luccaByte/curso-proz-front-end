@@ -1,0 +1,11 @@
+.texto {
+    font-size: 24px;
+    color: black;
+    background-color: lightcoral;
+}
+
+.outroTexto {
+    padding: 5px;
+}
+
+/* para modularizar css é só colocar .module antes do .css */

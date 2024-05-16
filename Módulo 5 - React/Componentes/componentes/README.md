@@ -6,3 +6,4 @@
 - props
 - modularização de componentes
 - children
+- css modules
