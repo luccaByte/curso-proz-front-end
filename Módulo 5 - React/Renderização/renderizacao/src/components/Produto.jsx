@@ -1,5 +1,7 @@
 import styles from '../styles/Produto.module.css'
 
+
+
 function Produto({nome, estoque}) {
     let textoEstoque = estoque > 0 ? `${estoque} iten(s)` : 'Indisponível' // if ternário
 
