@@ -1,0 +1,31 @@
+.container {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.container h1, .container h2 {
+    margin: 0px;
+    margin-bottom: 0.5rem;
+}
+
+.lista ul {
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.lista li {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 0.5rem 0px;
+}
+
+.lista li:hover {
+    font-weight: bold;
+}
+
+.detalhes {
+    width: 50%;
+}
