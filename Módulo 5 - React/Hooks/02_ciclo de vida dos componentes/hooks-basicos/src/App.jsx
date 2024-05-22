@@ -1,11 +1,11 @@
 import styles from './App.module.css'
+import { useState } from 'react'
+import { usuarios } from './lista'
 
 function App() {
-    let estado = ''
-    function mudarEstado(nome) {
-        estado = nome
-        console.log(estado)
-    }
+    let [selecionado, setSelecionado] = useState(null) 
+    console.log(selecionado)
+
 
     return <>
         <h1>Hooks Básicos</h1>
@@ -13,17 +13,21 @@ function App() {
             <div className={styles.lista}>
                 <h2>Usuários:</h2>
                 <ul>
-                    <li onClick={() => mudarEstado('Homer')}>Homer</li>
-                    <li>Marge</li>
-                    <li>Moe</li>
+                    {
+                        usuarios.map((elemento, indice) => {
+                            return <li key={indice} onClick={() => setSelecionado(elemento)}>
+                                {elemento.nome}
+                            </li>
+                        })
+                    }
                 </ul>
             </div>
             <div className={styles.detalhes}>
                 <h2>Detalhes:</h2>
-                <p>Nome: </p>
-                <p>Sobrenome: </p>
-                <p>Idade: </p>
-                <p>Profissão: </p>
+                <p>Nome: {selecionado ? selecionado.nome : ''}</p>
+                <p>Sobrenome: {selecionado ? selecionado.sobrenome : ''}</p>
+                <p>Idade: {selecionado ? selecionado.idade : ''}</p>
+                <p>Profissão: {selecionado ? selecionado.profissao : ''}</p>
             </div>
         </div>
     </>
