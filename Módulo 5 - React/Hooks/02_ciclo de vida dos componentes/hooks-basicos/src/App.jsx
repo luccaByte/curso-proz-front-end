@@ -1,11 +1,11 @@
-import styles from './App.module.css'
+import styles from './styles/App.module.css'
 import { useState } from 'react'
 import { usuarios } from './lista'
+import Detalhes from "./components/Detalhes";
 
 function App() {
     let [selecionado, setSelecionado] = useState(null) 
     console.log(selecionado)
-
 
     return <>
         <h1>Hooks Básicos</h1>
@@ -22,13 +22,8 @@ function App() {
                     }
                 </ul>
             </div>
-            <div className={styles.detalhes}>
-                <h2>Detalhes:</h2>
-                <p>Nome: {selecionado ? selecionado.nome : ''}</p>
-                <p>Sobrenome: {selecionado ? selecionado.sobrenome : ''}</p>
-                <p>Idade: {selecionado ? selecionado.idade : ''}</p>
-                <p>Profissão: {selecionado ? selecionado.profissao : ''}</p>
-            </div>
+            
+            <Detalhes selecionado={selecionado} />
         </div>
     </>
 }
