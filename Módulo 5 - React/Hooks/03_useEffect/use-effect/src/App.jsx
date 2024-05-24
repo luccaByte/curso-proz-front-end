@@ -5,11 +5,13 @@ import Paginacao from "./components/Paginacao";
 function App() {
     const [lista, setLista] = useState([])
     const [carregando, setCarregando] = useState(false) 
+    const [pagina, setPagina] = useState(2)
 
+    // useEffect é usado quando queremos interagir com sistemas externos (api), para requisiçoes de api
     useEffect(() => {
         setCarregando(true)
 
-        fetch('https://reqres.in/api/users?page=1&&delay=5')
+        fetch(`https://reqres.in/api/users?page=${pagina}&&delay=3`)
         .then(resposta => resposta.json())
         .then(dados => {
             console.log(dados.data)
@@ -17,7 +19,11 @@ function App() {
 
             setCarregando(false)
         })
-    }, [])
+    }, [pagina])
+
+    useEffect(() => {
+        console.log(pagina)
+    }, [pagina])
 
     return <>
         <h1>Use Effect</h1>
@@ -27,7 +33,7 @@ function App() {
             :
             <Lista lista={lista} />
         }
-        <Paginacao />
+        <Paginacao pagina={pagina} setPagina={setPagina} />
     </>
 }
 
