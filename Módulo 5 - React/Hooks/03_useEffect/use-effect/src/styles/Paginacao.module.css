@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+button {
+    width: 28px;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid #BEBEBE 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
